@@ -46,6 +46,7 @@ p {
   line-height: 1.4;
   width: 300px;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 p::before {
