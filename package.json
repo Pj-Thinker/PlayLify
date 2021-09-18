@@ -1,0 +1,17 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "repository": "https://github.com/Pj-Thinker/PlayLify.git",
+  "author": "PeJman <58425285+Pj-Thinker@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "splitting": "^1.0.6"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  }
+}

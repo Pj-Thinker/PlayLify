@@ -56,3 +56,14 @@ p::before {
   background: white;
   z-index: -1;
 }
+
+.char {
+  animation: in 0.3s linear;
+}
+
+@keyframes in {
+  from {
+    transform: translateX(2rem);
+    opacity: 0;
+  }
+}
