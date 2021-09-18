@@ -5,13 +5,16 @@
   "author": "PeJman <58425285+Pj-Thinker@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
+    "netlify-lambda": "^2.0.14",
     "parcel": "^2.0.0-rc.0"
   },
   "dependencies": {
+    "node-fetch": "^2.6.2",
     "splitting": "^1.0.6"
   },
   "scripts": {
     "start": "parcel src/index.html",
+    "postinstall": "netlify-lambda install",
     "prebuild": "echo $MY_SECRET",
     "build": "parcel build src/index.html"
   }
