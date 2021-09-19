@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Contact Us</title>
+    <style>
+      .hidden {
+        opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="titan-background">
@@ -18,7 +23,19 @@
       <div class="header">
         <h1><div class="title-marvel">Netlify</div></h1>
         <h2>Contact Us</h2>
-        <form name="contact" class="my-form" netlify action="/thankyou">
+        <form
+          name="contact"
+          netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
+          class="my-form"
+          netlify
+          action="/thankyou"
+        >
+          <p class="hidden">
+            <label
+              >Don't fill this out if you're human: <input name="bot-field"
+            /></label>
+          </p>
           <p>
             <label> Name <input type="text" name="name" /></label>
           </p>
@@ -28,6 +45,7 @@
           <p>
             <label> File <input type="file" name="file" /></label>
           </p>
+          <div data-netlify-recaptcha="true"></div>
           <p>
             <button type="submit">Send</button>
           </p>
