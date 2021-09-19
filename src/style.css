@@ -67,3 +67,40 @@ p::before {
     opacity: 0;
   }
 }
+
+.title-marvel {
+  color: teal;
+  position: relative;
+  padding: 1rem 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.title-marvel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: black;
+  z-index: -1;
+}
+
+.my-form {
+  margin: 1rem;
+}
+
+.thank-you {
+  font-weight: bold;
+  color: black;
+  display: block;
+  height: 100px;
+}
+
+.thank-you::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: yellow;
+  z-index: -1;
+}
