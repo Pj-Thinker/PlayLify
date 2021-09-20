@@ -3,6 +3,6 @@
   publish = "dist"
   functions = "functions"
 [dev]
-  port = 1234
+  port = 8888
   command = "yarn start"
   publish = "src"
